@@ -102,7 +102,7 @@ export default function Hero({ canvasReady = false }) {
           </motion.p>
 
           <motion.h1
-            className="text-5xl sm:text-6xl font-extrabold tracking-tight mb-4"
+            className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4"
             initial="hidden"
             animate="visible"
             variants={{ visible: { transition: { staggerChildren: 0.04, delayChildren: 0.3 } } }}
