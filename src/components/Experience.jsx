@@ -21,9 +21,9 @@ const experiences = [
     location: 'Vienna, Austria',
     period: 'Oct 2025 – Present',
     current: true,
-    color: 'from-indigo-500 to-purple-500',
-    dotColor: 'bg-indigo-500',
-    glowColor: 'rgba(99,102,241,0.3)',
+    color: 'from-emerald-500 to-violet-500',
+    dotColor: 'bg-emerald-500',
+    glowColor: 'rgba(16,185,129,0.3)',
     responsibilities: [
       'Developed scalable web applications from the ground up, leveraging modern frameworks and best practices.',
       'Managed and maintained company websites across 15+ projects, ensuring uptime, performance, and quality.',
@@ -101,13 +101,13 @@ export default function Experience() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-cyan-500 dark:text-cyan-400 font-medium mb-2 tracking-wider uppercase text-sm">My Journey</p>
+          <p className="text-emerald-500 dark:text-emerald-400 font-medium mb-2 tracking-wider uppercase text-sm">My Journey</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">Experience</h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-cyan-500 to-indigo-500 mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-violet-500 mx-auto rounded-full" />
         </motion.div>
 
         <div className="relative mb-16">
-          <div className="absolute left-6 sm:left-1/2 sm:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500/50 via-purple-500/30 to-transparent" />
+          <div className="absolute left-6 sm:left-1/2 sm:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-emerald-500/50 via-violet-500/30 to-transparent" />
 
           <div className="space-y-12">
             {experiences.map((exp, idx) => (
@@ -129,7 +129,7 @@ export default function Experience() {
                 <div className="hidden sm:block sm:w-1/2" />
 
                 <div className="pl-14 sm:pl-0 sm:w-1/2">
-                  <GlowCard glowColor={exp.glowColor} className="hover:border-indigo-500/40 hover:shadow-indigo-500/5 p-6">
+                  <GlowCard glowColor={exp.glowColor} className="hover:border-emerald-500/40 hover:shadow-emerald-500/5 p-6">
                     <div className="flex items-start justify-between gap-3 mb-4">
                       <div>
                         <div className="flex items-center gap-2 mb-1">
@@ -150,11 +150,11 @@ export default function Experience() {
 
                     <div className="flex flex-wrap gap-3 mb-4">
                       <span className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 text-xs">
-                        <MapPin size={12} className="text-indigo-500 dark:text-indigo-400" />
+                        <MapPin size={12} className="text-emerald-500 dark:text-emerald-400" />
                         {exp.location}
                       </span>
                       <span className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 text-xs">
-                        <Calendar size={12} className="text-indigo-500 dark:text-indigo-400" />
+                        <Calendar size={12} className="text-emerald-500 dark:text-emerald-400" />
                         {exp.period}
                       </span>
                     </div>
@@ -162,7 +162,7 @@ export default function Experience() {
                     <ul className="space-y-2 mb-4">
                       {exp.responsibilities.map((r, i) => (
                         <li key={i} className="flex items-start gap-2 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                          <span className="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0 mt-2" />
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0 mt-2" />
                           {r}
                         </li>
                       ))}
@@ -172,7 +172,7 @@ export default function Experience() {
                       {exp.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="bg-indigo-500/10 text-indigo-600 dark:text-indigo-300 text-xs font-medium px-2.5 py-1 rounded-lg border border-indigo-500/20"
+                          className="bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 text-xs font-medium px-2.5 py-1 rounded-lg border border-emerald-500/20"
                         >
                           {tag}
                         </span>

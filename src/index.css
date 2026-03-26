@@ -49,7 +49,7 @@
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-cyan-500 to-indigo-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-emerald-500 to-violet-500 bg-clip-text text-transparent;
   }
 }
 
@@ -75,7 +75,7 @@
 html.dark ::-webkit-scrollbar { width: 6px; }
 html.dark ::-webkit-scrollbar-track { background: #0B0F19; }
 html.dark ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 3px; }
-html.dark ::-webkit-scrollbar-thumb:hover { background: #06B6D4; }
+html.dark ::-webkit-scrollbar-thumb:hover { background: #10B981; }
 
 /* ── Scrollbar — light ────────────────────────────────────────── */
 ::-webkit-scrollbar { width: 6px; }

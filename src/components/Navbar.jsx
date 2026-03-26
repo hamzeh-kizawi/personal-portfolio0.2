@@ -53,7 +53,7 @@ export default function Navbar() {
           <a
             href="#home"
             onClick={(e) => { e.preventDefault(); handleNavClick('#home') }}
-            className="flex items-center gap-2 text-indigo-400 font-bold text-xl hover:text-indigo-300 transition-colors"
+            className="flex items-center gap-2 text-emerald-500 font-bold text-xl hover:text-emerald-400 transition-colors"
           >
             <Code2 size={24} />
             <span>HK</span>
@@ -69,7 +69,7 @@ export default function Navbar() {
                   onClick={(e) => { e.preventDefault(); handleNavClick(href) }}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                     active === id
-                      ? 'text-indigo-500 dark:text-indigo-400 bg-indigo-500/10'
+                      ? 'text-emerald-500 dark:text-emerald-400 bg-emerald-500/10'
                       : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800'
                   }`}
                 >
@@ -87,7 +87,7 @@ export default function Navbar() {
             >
               {isDark
                 ? <Sun size={19} className="text-amber-400" />
-                : <Moon size={19} className="text-indigo-500" />
+                : <Moon size={19} className="text-emerald-500" />
               }
             </button>
 
@@ -114,7 +114,7 @@ export default function Navbar() {
                   onClick={(e) => { e.preventDefault(); handleNavClick(href) }}
                   className={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 ${
                     active === id
-                      ? 'text-indigo-500 dark:text-indigo-400 bg-indigo-500/10'
+                      ? 'text-emerald-500 dark:text-emerald-400 bg-emerald-500/10'
                       : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800'
                   }`}
                 >

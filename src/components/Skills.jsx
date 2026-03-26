@@ -63,9 +63,9 @@ export default function Skills() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-indigo-500 dark:text-indigo-400 font-medium mb-2 tracking-wider uppercase text-sm">What I work with</p>
+          <p className="text-emerald-500 dark:text-emerald-400 font-medium mb-2 tracking-wider uppercase text-sm">What I work with</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">Skills</h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-violet-500 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-3 gap-6">

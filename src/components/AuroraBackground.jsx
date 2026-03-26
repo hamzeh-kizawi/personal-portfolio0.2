@@ -43,7 +43,7 @@ export default function AuroraBackground({ isDark }) {
                 height: 700,
                 top: '-15%',
                 left: '-10%',
-                background: `radial-gradient(circle, rgba(6,182,212,${orb1Opacity}) 0%, transparent 70%)`,
+                background: `radial-gradient(circle, rgba(16,185,129,${orb1Opacity}) 0%, transparent 70%)`,
                 animation: 'aurora-drift-1 18s ease-in-out infinite',
                 willChange: 'transform',
               }}
@@ -58,7 +58,7 @@ export default function AuroraBackground({ isDark }) {
                 height: 800,
                 bottom: '-20%',
                 right: '-15%',
-                background: `radial-gradient(circle, rgba(99,102,241,${orb2Opacity}) 0%, transparent 70%)`,
+                background: `radial-gradient(circle, rgba(139,92,246,${orb2Opacity}) 0%, transparent 70%)`,
                 animation: 'aurora-drift-2 22s ease-in-out infinite',
                 willChange: 'transform',
               }}
@@ -74,7 +74,7 @@ export default function AuroraBackground({ isDark }) {
                 top: '30%',
                 left: '40%',
                 transform: 'translate(-50%, -50%)',
-                background: 'conic-gradient(from 0deg, rgba(6,182,212,0.06), rgba(99,102,241,0.06), rgba(6,182,212,0.06))',
+                background: 'conic-gradient(from 0deg, rgba(16,185,129,0.06), rgba(139,92,246,0.06), rgba(16,185,129,0.06))',
                 borderRadius: '50%',
                 animation: 'aurora-spin 30s linear infinite',
                 willChange: 'transform',

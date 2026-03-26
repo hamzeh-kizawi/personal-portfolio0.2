@@ -156,7 +156,7 @@ function Terminal() {
           <div key={i} className="leading-relaxed">
             {line.type === 'input' && (
               <p>
-                <span className="text-cyan-400 select-none">$ </span>
+                <span className="text-emerald-400 select-none">$ </span>
                 <span className="text-slate-100">{line.text}</span>
               </p>
             )}
@@ -175,7 +175,7 @@ function Terminal() {
           </div>
         ))}
         {running && (
-          <span className="inline-block w-2 h-4 bg-cyan-400 animate-pulse" />
+          <span className="inline-block w-2 h-4 bg-emerald-400 animate-pulse" />
         )}
       </div>
 
@@ -183,7 +183,7 @@ function Terminal() {
         onSubmit={handleSubmit}
         className="flex items-center gap-2 px-4 py-3 bg-[#0d1117]/95 border-t border-white/10"
       >
-        <span className="text-cyan-400 font-mono text-sm select-none flex-shrink-0">
+        <span className="text-emerald-400 font-mono text-sm select-none flex-shrink-0">
           hamzeh@portfolio:~$
         </span>
         <input
@@ -217,9 +217,9 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-indigo-500 dark:text-indigo-400 font-medium mb-2 tracking-wider uppercase text-sm">Who I am</p>
+          <p className="text-emerald-500 dark:text-emerald-400 font-medium mb-2 tracking-wider uppercase text-sm">Who I am</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">About Me</h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full" />
+          <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-violet-500 mx-auto rounded-full" />
         </motion.div>
 
         <motion.div
@@ -230,7 +230,7 @@ export default function About() {
           className="bg-white dark:bg-[#1e293b] rounded-2xl border border-slate-200 dark:border-[#334155] p-8 mb-10 text-center max-w-3xl mx-auto"
         >
           <p className="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
-            I'm <span className="text-indigo-500 dark:text-indigo-400 font-semibold">Hamzeh</span>, a computer science enthusiast who navigates
+            I'm <span className="text-emerald-500 dark:text-emerald-400 font-semibold">Hamzeh</span>, a computer science enthusiast who navigates
             the maze of coding challenges with a keyboard in one hand and a cup of coffee in the other. When life throws
             you errors, sometimes all you need is a good punchline to fix everything.
           </p>
@@ -244,7 +244,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-2 mb-6">
-              <GraduationCap className="text-indigo-500 dark:text-indigo-400" size={22} />
+              <GraduationCap className="text-emerald-500 dark:text-emerald-400" size={22} />
               <h3 className="text-xl font-bold text-slate-900 dark:text-white">Education</h3>
             </div>
             <div className="space-y-4">
@@ -252,13 +252,13 @@ export default function About() {
                 <motion.div
                   key={edu.school}
                   variants={fadeUp}
-                  className="bg-white dark:bg-[#1e293b] rounded-xl border border-slate-200 dark:border-[#334155] p-5 hover:border-indigo-500/50 transition-colors duration-200"
+                  className="bg-white dark:bg-[#1e293b] rounded-xl border border-slate-200 dark:border-[#334155] p-5 hover:border-emerald-500/50 transition-colors duration-200"
                 >
                   <div className="flex items-start gap-3">
                     <span className="text-2xl mt-0.5">{edu.icon}</span>
                     <div>
                       <h4 className="font-semibold text-slate-900 dark:text-white text-sm">{edu.degree}</h4>
-                      <p className="text-indigo-500 dark:text-indigo-400 text-sm font-medium">{edu.school}</p>
+                      <p className="text-emerald-500 dark:text-emerald-400 text-sm font-medium">{edu.school}</p>
                       <p className="text-slate-500 text-xs mt-0.5">{edu.location}</p>
                       <p className="text-slate-500 dark:text-slate-400 text-xs mt-2 leading-relaxed">{edu.detail}</p>
                     </div>
@@ -275,7 +275,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-2 mb-6">
-              <Languages className="text-indigo-500 dark:text-indigo-400" size={22} />
+              <Languages className="text-emerald-500 dark:text-emerald-400" size={22} />
               <h3 className="text-xl font-bold text-slate-900 dark:text-white">Languages</h3>
             </div>
             <div className="bg-white dark:bg-[#1e293b] rounded-xl border border-slate-200 dark:border-[#334155] p-5 space-y-5">
@@ -283,7 +283,7 @@ export default function About() {
                 <motion.div key={l.lang} variants={fadeUp}>
                   <div className="flex justify-between items-baseline mb-1.5">
                     <span className="text-slate-800 dark:text-slate-200 font-medium text-sm">{l.lang}</span>
-                    <span className="text-indigo-500 dark:text-indigo-400 text-xs font-medium">{l.level}</span>
+                    <span className="text-emerald-500 dark:text-emerald-400 text-xs font-medium">{l.level}</span>
                   </div>
                   <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2">
                     <motion.div
@@ -291,7 +291,7 @@ export default function About() {
                       whileInView={{ width: `${l.percent}%` }}
                       viewport={{ once: true }}
                       transition={{ duration: 1, ease: 'easeOut', delay: 0.2 }}
-                      className="h-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500"
+                      className="h-2 rounded-full bg-gradient-to-r from-emerald-500 to-violet-500"
                     />
                   </div>
                 </motion.div>
@@ -300,7 +300,7 @@ export default function About() {
 
             <div className="mt-6">
               <div className="flex items-center gap-2 mb-4">
-                <Sparkles className="text-indigo-500 dark:text-indigo-400" size={22} />
+                <Sparkles className="text-emerald-500 dark:text-emerald-400" size={22} />
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white">Fun Facts</h3>
               </div>
               <div className="grid grid-cols-2 gap-3">

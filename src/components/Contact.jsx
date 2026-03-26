@@ -21,8 +21,8 @@ const contactInfo = [
     label: 'Email',
     value: 'hamza.ky919@gmail.com',
     href: 'mailto:hamza.ky919@gmail.com',
-    color: 'text-indigo-500 dark:text-indigo-400',
-    bg: 'bg-indigo-500/10',
+    color: 'text-emerald-500 dark:text-emerald-400',
+    bg: 'bg-emerald-500/10',
   },
   {
     icon: Phone,
@@ -45,13 +45,13 @@ const contactInfo = [
     label: 'GitHub',
     value: 'github.com/hamzeh-kizawi',
     href: 'https://github.com/hamzeh-kizawi?tab=repositories',
-    color: 'text-purple-600 dark:text-purple-400',
-    bg: 'bg-purple-500/10',
+    color: 'text-emerald-600 dark:text-emerald-400',
+    bg: 'bg-emerald-500/10',
   },
 ]
 
 const inputClass =
-  'w-full bg-slate-50 dark:bg-[#0f172a] border border-slate-200 dark:border-[#334155] text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors duration-200'
+  'w-full bg-slate-50 dark:bg-[#0f172a] border border-slate-200 dark:border-[#334155] text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-colors duration-200'
 
 export default function Contact() {
   const [loading, setLoading] = useState(false)
@@ -102,9 +102,9 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-indigo-500 dark:text-indigo-400 font-medium mb-2 tracking-wider uppercase text-sm">Let's Connect</p>
+          <p className="text-emerald-500 dark:text-emerald-400 font-medium mb-2 tracking-wider uppercase text-sm">Let's Connect</p>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-4">Get in Touch</h2>
-          <div className="w-16 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full mb-4" />
+          <div className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-violet-500 mx-auto rounded-full mb-4" />
           <p className="text-slate-500 dark:text-slate-400 max-w-md mx-auto">
             Have a project in mind or just want to say hi? My inbox is always open.
           </p>
@@ -173,7 +173,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-500 disabled:bg-indigo-600/50 disabled:cursor-not-allowed text-white font-semibold py-3.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/25 active:scale-[0.98]"
+                className="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 disabled:bg-emerald-600/50 disabled:cursor-not-allowed text-white font-semibold py-3.5 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-emerald-500/25 active:scale-[0.98]"
               >
                 {loading ? (
                   <>
@@ -226,7 +226,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-indigo-600/10 to-purple-600/10 dark:from-indigo-600/20 dark:to-purple-600/20 rounded-2xl border border-indigo-500/20 dark:border-indigo-500/30 p-6">
+            <div className="bg-gradient-to-br from-emerald-600/10 to-violet-600/10 dark:from-emerald-600/20 dark:to-violet-600/20 rounded-2xl border border-emerald-500/20 dark:border-emerald-500/30 p-6">
               <p className="text-slate-900 dark:text-white font-semibold mb-2">Open to Opportunities</p>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                 I'm actively looking for new opportunities. Whether it's a full-time role, freelance project, or collaboration — let's talk!

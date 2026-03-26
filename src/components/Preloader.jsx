@@ -51,7 +51,7 @@ export default function Preloader({ onComplete }) {
 
             <div className="w-48 sm:w-64 h-px bg-white/10 overflow-hidden">
               <motion.div
-                className="h-full bg-gradient-to-r from-cyan-500 to-indigo-500"
+                className="h-full bg-gradient-to-r from-emerald-500 to-violet-500"
                 style={{ width: `${count}%` }}
               />
             </div>

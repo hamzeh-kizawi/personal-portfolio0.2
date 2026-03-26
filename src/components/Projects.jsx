@@ -90,7 +90,7 @@ function ProjectCard({ project, idx, onPlayVideo, onOpenGallery }) {
         backdrop-blur-xl
         border border-white/80 dark:border-white/10
         shadow-lg shadow-slate-200/50 dark:shadow-xl dark:shadow-black/30
-        transition-shadow duration-300 hover:shadow-2xl hover:shadow-indigo-500/10 dark:hover:shadow-indigo-500/10"
+        transition-shadow duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 dark:hover:shadow-emerald-500/10"
     >
       <div
         ref={glowRef}
@@ -127,7 +127,7 @@ function ProjectCard({ project, idx, onPlayVideo, onOpenGallery }) {
               </span>
             )}
           </div>
-          <FolderOpen size={20} className="text-slate-400 dark:text-slate-500 group-hover:text-indigo-500 transition-colors" />
+          <FolderOpen size={20} className="text-slate-400 dark:text-slate-500 group-hover:text-emerald-500 transition-colors" />
         </div>
 
         <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{project.title}</h3>
@@ -137,7 +137,7 @@ function ProjectCard({ project, idx, onPlayVideo, onOpenGallery }) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="bg-indigo-500/10 text-indigo-600 dark:text-indigo-300 text-xs font-medium px-2.5 py-1 rounded-lg border border-indigo-500/20"
+              className="bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 text-xs font-medium px-2.5 py-1 rounded-lg border border-emerald-500/20"
             >
               {tag}
             </span>
@@ -159,7 +159,7 @@ function ProjectCard({ project, idx, onPlayVideo, onOpenGallery }) {
           {project.images ? (
             <button
               onClick={() => onOpenGallery(project.images)}
-              className="inline-flex items-center gap-2 bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 text-sm font-medium px-4 py-2 rounded-lg border border-cyan-500/30 transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-sm font-medium px-4 py-2 rounded-lg border border-emerald-500/30 transition-colors cursor-pointer"
             >
               <Images size={15} />
               Screenshots
@@ -169,7 +169,7 @@ function ProjectCard({ project, idx, onPlayVideo, onOpenGallery }) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-cyan-500/80 hover:bg-cyan-500 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200"
+              className="inline-flex items-center gap-2 bg-emerald-500/80 hover:bg-emerald-500 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200"
             >
               <ExternalLink size={15} />
               Live Demo
@@ -177,7 +177,7 @@ function ProjectCard({ project, idx, onPlayVideo, onOpenGallery }) {
           ) : project.videoUrl ? (
             <button
               onClick={() => onPlayVideo(project.videoUrl)}
-              className="inline-flex items-center gap-2 bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-500 dark:text-indigo-400 text-sm font-medium px-4 py-2 rounded-lg border border-indigo-500/30 transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 text-sm font-medium px-4 py-2 rounded-lg border border-emerald-500/30 transition-colors cursor-pointer"
             >
               <Play size={15} />
               Play Video
@@ -231,7 +231,7 @@ export default function Projects() {
         >
           <motion.p
             variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } }}
-            className="text-cyan-500 dark:text-cyan-400 font-medium mb-2 tracking-wider uppercase text-sm"
+            className="text-emerald-500 dark:text-emerald-400 font-medium mb-2 tracking-wider uppercase text-sm"
           >
             What I've built
           </motion.p>
@@ -254,7 +254,7 @@ export default function Projects() {
           </motion.h2>
           <motion.div
             variants={{ hidden: { scaleX: 0 }, visible: { scaleX: 1, transition: { duration: 0.5, delay: 0.2 } } }}
-            className="w-16 h-1 bg-gradient-to-r from-cyan-500 to-indigo-500 mx-auto rounded-full origin-left"
+            className="w-16 h-1 bg-gradient-to-r from-emerald-500 to-violet-500 mx-auto rounded-full origin-left"
           />
         </motion.div>
 
@@ -283,14 +283,14 @@ export default function Projects() {
           className="text-center"
         >
           <div className="inline-flex flex-col sm:flex-row items-center gap-3 bg-white/70 dark:bg-white/5 backdrop-blur-xl border border-white/80 dark:border-white/10 rounded-2xl px-8 py-5 shadow-lg shadow-slate-200/50 dark:shadow-xl dark:shadow-black/30">
-            <Github size={20} className="text-cyan-500 dark:text-cyan-400" />
+            <Github size={20} className="text-emerald-500 dark:text-emerald-400" />
             <p className="text-slate-600 dark:text-slate-400 text-sm">
               Looking for more? Check out my{' '}
               <a
                 href="https://github.com/hamzeh-kizawi?tab=repositories"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-cyan-500 dark:text-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-300 font-semibold underline underline-offset-2 transition-colors"
+                className="text-emerald-500 dark:text-emerald-400 hover:text-emerald-600 dark:hover:text-emerald-300 font-semibold underline underline-offset-2 transition-colors"
               >
                 GitHub repositories
               </a>{' '}
@@ -369,7 +369,7 @@ export default function Projects() {
                   key={i}
                   onClick={() => setGalleryIndex(i)}
                   className={`w-12 h-8 rounded overflow-hidden border-2 transition-all ${
-                    i === galleryIndex ? 'border-cyan-400 opacity-100' : 'border-transparent opacity-50 hover:opacity-80'
+                    i === galleryIndex ? 'border-emerald-400 opacity-100' : 'border-transparent opacity-50 hover:opacity-80'
                   }`}
                 >
                   <img src={img.src} alt={img.label} className="w-full h-full object-cover object-top" />

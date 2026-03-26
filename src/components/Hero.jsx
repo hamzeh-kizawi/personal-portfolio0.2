@@ -8,7 +8,7 @@ import { useTheme } from '../context/ThemeContext'
 function CanvasFallback() {
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <div className="w-16 h-16 rounded-full border-2 border-indigo-500/30 border-t-indigo-500 animate-spin" />
+      <div className="w-16 h-16 rounded-full border-2 border-emerald-500/30 border-t-emerald-500 animate-spin" />
     </div>
   )
 }
@@ -81,7 +81,7 @@ export default function Hero({ canvasReady = false }) {
             className="mb-7"
           >
             <div className="relative inline-block">
-              <div className="w-36 h-36 rounded-full p-1 bg-gradient-to-br from-cyan-500 via-indigo-500 to-purple-500 shadow-2xl shadow-indigo-500/30">
+              <div className="w-36 h-36 rounded-full p-1 bg-gradient-to-br from-emerald-500 via-violet-500 to-purple-500 shadow-2xl shadow-violet-500/30">
                 <img
                   src="/My-picture.jpeg"
                   alt="Hamzeh Kizawi"
@@ -96,7 +96,7 @@ export default function Hero({ canvasReady = false }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15, duration: 0.6 }}
-            className="text-cyan-500 dark:text-cyan-400 font-medium text-lg mb-2 tracking-wide"
+            className="text-emerald-500 dark:text-emerald-400 font-medium text-lg mb-2 tracking-wide"
           >
             Hello, I'm
           </motion.p>
@@ -119,7 +119,7 @@ export default function Hero({ canvasReady = false }) {
                     ? 'inline-block w-4'
                     : i < 6
                     ? 'inline-block bg-gradient-to-r from-slate-900 via-slate-700 to-slate-600 dark:from-white dark:via-slate-200 dark:to-slate-300 bg-clip-text text-transparent'
-                    : 'inline-block bg-gradient-to-r from-cyan-500 to-indigo-500 bg-clip-text text-transparent'
+                    : 'inline-block bg-gradient-to-r from-emerald-500 to-violet-500 bg-clip-text text-transparent'
                 }
               >
                 {char}
@@ -146,7 +146,7 @@ export default function Hero({ canvasReady = false }) {
               <a
                 href="/Hamzeh-Kizawi-CV.pdf"
                 download
-                className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-cyan-500/30 active:scale-95"
+                className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 hover:shadow-lg hover:shadow-emerald-500/30 active:scale-95"
               >
                 <Download size={17} />
                 Download Resume
@@ -155,7 +155,7 @@ export default function Hero({ canvasReady = false }) {
             <MagneticButton>
               <button
                 onClick={scrollToContact}
-                className="inline-flex items-center gap-2 border border-cyan-500 text-cyan-500 dark:text-cyan-400 hover:bg-cyan-500/10 font-semibold px-6 py-3 rounded-xl transition-all duration-200 active:scale-95"
+                className="inline-flex items-center gap-2 border border-emerald-500 text-emerald-500 dark:text-emerald-400 hover:bg-emerald-500/10 font-semibold px-6 py-3 rounded-xl transition-all duration-200 active:scale-95"
               >
                 <Mail size={17} />
                 Get in Touch
