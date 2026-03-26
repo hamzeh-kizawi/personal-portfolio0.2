@@ -94,7 +94,6 @@ export default function Experience() {
   return (
     <motion.section id="experience" className="py-24 px-4 sm:px-6 lg:px-8 bg-white dark:bg-[#0B0F19]" {...sectionEntrance}>
       <div className="max-w-4xl mx-auto">
-        {/* Section Header */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -107,9 +106,7 @@ export default function Experience() {
           <div className="w-16 h-1 bg-gradient-to-r from-cyan-500 to-indigo-500 mx-auto rounded-full" />
         </motion.div>
 
-        {/* Timeline */}
         <div className="relative mb-16">
-          {/* Vertical line */}
           <div className="absolute left-6 sm:left-1/2 sm:-translate-x-px top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500/50 via-purple-500/30 to-transparent" />
 
           <div className="space-y-12">
@@ -125,18 +122,14 @@ export default function Experience() {
                   idx % 2 === 1 ? 'sm:flex-row-reverse' : ''
                 }`}
               >
-                {/* Timeline dot */}
                 <div className="absolute left-6 sm:left-1/2 sm:-translate-x-1/2 top-6 w-4 h-4 rounded-full border-2 border-white dark:border-[#0B0F19] z-10 flex-shrink-0">
                   <div className={`w-full h-full rounded-full ${exp.dotColor} shadow-lg`} />
                 </div>
 
-                {/* Spacer for desktop */}
                 <div className="hidden sm:block sm:w-1/2" />
 
-                {/* Card */}
                 <div className="pl-14 sm:pl-0 sm:w-1/2">
                   <GlowCard glowColor={exp.glowColor} className="hover:border-indigo-500/40 hover:shadow-indigo-500/5 p-6">
-                    {/* Header */}
                     <div className="flex items-start justify-between gap-3 mb-4">
                       <div>
                         <div className="flex items-center gap-2 mb-1">
@@ -155,7 +148,6 @@ export default function Experience() {
                       <Briefcase size={20} className="text-slate-400 dark:text-slate-500 flex-shrink-0 mt-1" />
                     </div>
 
-                    {/* Meta */}
                     <div className="flex flex-wrap gap-3 mb-4">
                       <span className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 text-xs">
                         <MapPin size={12} className="text-indigo-500 dark:text-indigo-400" />
@@ -167,7 +159,6 @@ export default function Experience() {
                       </span>
                     </div>
 
-                    {/* Responsibilities */}
                     <ul className="space-y-2 mb-4">
                       {exp.responsibilities.map((r, i) => (
                         <li key={i} className="flex items-start gap-2 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
@@ -177,7 +168,6 @@ export default function Experience() {
                       ))}
                     </ul>
 
-                    {/* Tags */}
                     <div className="flex flex-wrap gap-2">
                       {exp.tags.map((tag) => (
                         <span
@@ -195,7 +185,6 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Volunteering */}
         <motion.div
           variants={fadeUp}
           initial="hidden"

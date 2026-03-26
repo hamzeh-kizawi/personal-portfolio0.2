@@ -49,7 +49,6 @@ export default function CustomCursor() {
 
   return (
     <>
-      {/* Outer trailing ring */}
       <motion.div
         className="fixed top-0 left-0 rounded-full pointer-events-none z-[9999]"
         style={{
@@ -65,7 +64,6 @@ export default function CustomCursor() {
         }}
       />
 
-      {/* Inner dot — no spring, immediate */}
       <motion.div
         className="fixed top-0 left-0 rounded-full pointer-events-none z-[9999] bg-white"
         style={{

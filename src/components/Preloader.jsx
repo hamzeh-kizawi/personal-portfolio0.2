@@ -12,7 +12,6 @@ export default function Preloader({ onComplete }) {
     const tick = (now) => {
       const elapsed = now - start
       const progress = Math.min(elapsed / duration, 1)
-      // Ease-out cubic — accelerates toward 100
       const eased = 1 - Math.pow(1 - progress, 3)
       setCount(Math.floor(eased * 100))
 
@@ -50,7 +49,6 @@ export default function Preloader({ onComplete }) {
               </span>
             </div>
 
-            {/* Progress track */}
             <div className="w-48 sm:w-64 h-px bg-white/10 overflow-hidden">
               <motion.div
                 className="h-full bg-gradient-to-r from-cyan-500 to-indigo-500"

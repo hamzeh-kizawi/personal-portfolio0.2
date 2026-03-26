@@ -70,12 +70,10 @@ export default function Hero({ canvasReady = false }) {
     >
       <div className="relative z-10 w-full max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center py-24 pt-28">
 
-        {/* Left column */}
         <motion.div
           style={{ y: textY }}
           className="flex flex-col items-center lg:items-start text-center lg:text-left"
         >
-          {/* Profile Image */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -94,7 +92,6 @@ export default function Hero({ canvasReady = false }) {
             </div>
           </motion.div>
 
-          {/* Greeting */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -104,7 +101,6 @@ export default function Hero({ canvasReady = false }) {
             Hello, I'm
           </motion.p>
 
-          {/* Name — character stagger */}
           <motion.h1
             className="text-5xl sm:text-6xl font-extrabold tracking-tight mb-4"
             initial="hidden"
@@ -131,7 +127,6 @@ export default function Hero({ canvasReady = false }) {
             ))}
           </motion.h1>
 
-          {/* Tagline */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -141,7 +136,6 @@ export default function Hero({ canvasReady = false }) {
             Creative Full Stack Developer &amp; Tech Enthusiast
           </motion.p>
 
-          {/* CTA Buttons — magnetic */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -169,7 +163,6 @@ export default function Hero({ canvasReady = false }) {
             </MagneticButton>
           </motion.div>
 
-          {/* GitHub link */}
           <motion.a
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -184,7 +177,6 @@ export default function Hero({ canvasReady = false }) {
           </motion.a>
         </motion.div>
 
-        {/* Right column: 3D Canvas — only mounts after preloader exits */}
         <motion.div
           style={{ y: canvasY }}
           initial={{ opacity: 0, scale: 0.9 }}
@@ -207,7 +199,6 @@ export default function Hero({ canvasReady = false }) {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 10, 0] }}

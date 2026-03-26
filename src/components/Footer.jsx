@@ -6,7 +6,6 @@ export default function Footer() {
   return (
     <footer className="bg-slate-100 dark:bg-[#080e1a] border-t border-slate-200 dark:border-[#334155] py-8 px-4">
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        {/* Logo + copyright */}
         <div className="flex items-center gap-2 text-slate-500 text-sm">
           <Code2 size={16} className="text-indigo-500 dark:text-indigo-400" />
           <span>
@@ -18,7 +17,6 @@ export default function Footer() {
           </span>
         </div>
 
-        {/* Links */}
         <div className="flex items-center gap-4">
           <a
             href="mailto:hamza.ky919@gmail.com"

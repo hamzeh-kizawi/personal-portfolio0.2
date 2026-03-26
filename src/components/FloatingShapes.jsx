@@ -17,7 +17,6 @@ function LiquidSphere({ isDark, isMobile }) {
     if (!meshRef.current || !matRef.current) return
 
     if (isMobile) {
-      // Simple auto-rotation on mobile — no pointer tracking
       meshRef.current.rotation.y += 0.004
       return
     }

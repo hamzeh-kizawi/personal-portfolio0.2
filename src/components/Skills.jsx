@@ -56,7 +56,6 @@ export default function Skills() {
   return (
     <motion.section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#0a1120]" {...sectionEntrance}>
       <div className="max-w-5xl mx-auto">
-        {/* Section Header */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -69,7 +68,6 @@ export default function Skills() {
           <div className="w-16 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full" />
         </motion.div>
 
-        {/* Skill Cards */}
         <div className="grid md:grid-cols-3 gap-6">
           {categories.map((cat, idx) => {
             const Icon = cat.icon
@@ -83,7 +81,6 @@ export default function Skills() {
                 transition={{ delay: idx * 0.1 }}
                 className={`${cat.bgColor} rounded-2xl border ${cat.borderColor} p-6 hover:shadow-xl transition-all duration-300`}
               >
-                {/* Header */}
                 <div className="flex items-center gap-3 mb-5">
                   <div className={`p-2 rounded-xl ${cat.bgColor} border ${cat.borderColor}`}>
                     <Icon size={22} className={cat.color} />
@@ -91,7 +88,6 @@ export default function Skills() {
                   <h3 className="text-slate-900 dark:text-white font-bold text-lg">{cat.title}</h3>
                 </div>
 
-                {/* Badges */}
                 <motion.div
                   variants={stagger}
                   initial="hidden"

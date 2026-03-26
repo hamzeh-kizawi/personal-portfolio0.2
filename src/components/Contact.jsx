@@ -70,7 +70,7 @@ export default function Contact() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          access_key: '2e1a2fc3-137a-48b5-9c91-e01cb402a5f6',
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
           name: formData.name,
           email: formData.email,
           message: formData.message,
@@ -95,7 +95,6 @@ export default function Contact() {
   return (
     <motion.section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 bg-slate-50 dark:bg-[#0a1120]" {...sectionEntrance}>
       <div className="max-w-5xl mx-auto">
-        {/* Section Header */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -112,7 +111,6 @@ export default function Contact() {
         </motion.div>
 
         <div className="grid md:grid-cols-5 gap-8">
-          {/* Contact Form — 3 cols */}
           <motion.div
             variants={fadeUp}
             initial="hidden"
@@ -195,7 +193,6 @@ export default function Contact() {
             </form>
           </motion.div>
 
-          {/* Contact Info — 2 cols */}
           <motion.div
             variants={fadeUp}
             initial="hidden"
@@ -229,7 +226,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* CTA panel */}
             <div className="bg-gradient-to-br from-indigo-600/10 to-purple-600/10 dark:from-indigo-600/20 dark:to-purple-600/20 rounded-2xl border border-indigo-500/20 dark:border-indigo-500/30 p-6">
               <p className="text-slate-900 dark:text-white font-semibold mb-2">Open to Opportunities</p>
               <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">

@@ -12,7 +12,7 @@ export default function AuroraBackground({ isDark }) {
   const springY = useSpring(mouseY, { stiffness: 60, damping: 20 })
 
   useEffect(() => {
-    if (isMobile) return // no parallax on mobile
+    if (isMobile) return
     const move = (e) => {
       const cx = window.innerWidth / 2
       const cy = window.innerHeight / 2
@@ -23,7 +23,6 @@ export default function AuroraBackground({ isDark }) {
     return () => window.removeEventListener('mousemove', move)
   }, [isMobile, mouseX, mouseY])
 
-  // Orb opacity is reduced on mobile for better scroll FPS
   const orb1Opacity = isMobile ? 0.10 : 0.18
   const orb2Opacity = isMobile ? 0.09 : 0.16
   const orb1OpacityLight = isMobile ? 0.08 : 0.14
@@ -36,7 +35,6 @@ export default function AuroraBackground({ isDark }) {
     >
       {isDark ? (
         <>
-          {/* Orb 1 — cyan */}
           <motion.div style={{ x: springX, y: springY }} className="absolute">
             <div
               className="absolute rounded-full"
@@ -52,7 +50,6 @@ export default function AuroraBackground({ isDark }) {
             />
           </motion.div>
 
-          {/* Orb 2 — indigo */}
           <motion.div style={{ x: springX, y: springY }}>
             <div
               className="absolute rounded-full"
@@ -68,7 +65,6 @@ export default function AuroraBackground({ isDark }) {
             />
           </motion.div>
 
-          {/* Conic spin layer — desktop only */}
           {!isMobile && (
             <div
               className="absolute"
@@ -88,7 +84,6 @@ export default function AuroraBackground({ isDark }) {
         </>
       ) : (
         <>
-          {/* Orb 1 — lavender */}
           <motion.div style={{ x: springX, y: springY }}>
             <div
               className="absolute rounded-full"
@@ -104,7 +99,6 @@ export default function AuroraBackground({ isDark }) {
             />
           </motion.div>
 
-          {/* Orb 2 — coral */}
           <motion.div style={{ x: springX, y: springY }}>
             <div
               className="absolute rounded-full"
@@ -120,7 +114,6 @@ export default function AuroraBackground({ isDark }) {
             />
           </motion.div>
 
-          {/* Conic spin layer — desktop only */}
           {!isMobile && (
             <div
               className="absolute"

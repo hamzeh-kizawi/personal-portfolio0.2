@@ -50,7 +50,6 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <a
             href="#home"
             onClick={(e) => { e.preventDefault(); handleNavClick('#home') }}
@@ -60,7 +59,6 @@ export default function Navbar() {
             <span>HK</span>
           </a>
 
-          {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map(({ label, href }) => {
               const id = href.slice(1)
@@ -81,9 +79,7 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* Right controls */}
           <div className="flex items-center gap-2">
-            {/* Theme toggle */}
             <button
               onClick={toggleTheme}
               className="p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-200"
@@ -95,7 +91,6 @@ export default function Navbar() {
               }
             </button>
 
-            {/* Mobile Hamburger */}
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
@@ -107,7 +102,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white/95 dark:bg-[#0f172a]/95 backdrop-blur-md border-b border-slate-200 dark:border-[#334155]">
           <div className="px-4 py-3 space-y-1">

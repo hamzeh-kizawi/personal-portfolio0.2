@@ -48,7 +48,6 @@ const funFacts = [
   { icon: Coffee, label: 'Coffee Lover', color: 'text-amber-500 dark:text-amber-400', bg: 'bg-amber-500/10' },
 ]
 
-// ── Terminal Easter Egg ────────────────────────────────────────────
 const HELP_OUTPUT = [
   { type: 'output', text: '┌─────────────────────────────────────────┐' },
   { type: 'output', text: '│         Available Commands              │' },
@@ -141,7 +140,6 @@ function Terminal() {
       onClick={() => inputRef.current?.focus()}
       style={{ cursor: 'text' }}
     >
-      {/* Title bar */}
       <div className="flex items-center gap-2 px-4 py-3 bg-[#1c1c1e] border-b border-white/10">
         <span className="w-3 h-3 rounded-full bg-[#FF5F56]" />
         <span className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
@@ -149,7 +147,6 @@ function Terminal() {
         <span className="ml-4 text-slate-400 text-xs font-mono">hamzeh@portfolio:~</span>
       </div>
 
-      {/* Output area */}
       <div
         ref={outputRef}
         className="bg-[#0d1117]/95 backdrop-blur-xl p-4 font-mono text-sm overflow-y-auto"
@@ -182,7 +179,6 @@ function Terminal() {
         )}
       </div>
 
-      {/* Input row */}
       <form
         onSubmit={handleSubmit}
         className="flex items-center gap-2 px-4 py-3 bg-[#0d1117]/95 border-t border-white/10"
@@ -206,7 +202,6 @@ function Terminal() {
   )
 }
 
-// ── Main Component ─────────────────────────────────────────────────
 export default function About() {
   return (
     <motion.section
@@ -215,7 +210,6 @@ export default function About() {
       {...sectionEntrance}
     >
       <div className="max-w-5xl mx-auto">
-        {/* Section Header */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -228,7 +222,6 @@ export default function About() {
           <div className="w-16 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full" />
         </motion.div>
 
-        {/* Bio */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -244,7 +237,6 @@ export default function About() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-10 mb-14">
-          {/* Education */}
           <motion.div
             variants={stagger}
             initial="hidden"
@@ -276,7 +268,6 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* Languages */}
           <motion.div
             variants={stagger}
             initial="hidden"
@@ -307,7 +298,6 @@ export default function About() {
               ))}
             </div>
 
-            {/* Fun Facts */}
             <div className="mt-6">
               <div className="flex items-center gap-2 mb-4">
                 <Sparkles className="text-indigo-500 dark:text-indigo-400" size={22} />
@@ -329,7 +319,6 @@ export default function About() {
           </motion.div>
         </div>
 
-        {/* Terminal Easter Egg */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
